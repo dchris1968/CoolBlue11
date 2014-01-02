@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$.getJSON("http://localhost/BasicWebService/carwebservice.php", function(data) {
+	$.getJSON("http://localhost/CoolBlue11/php/carservice.php", function(data) {
 		$.each(data, function(i, item){
 			var table_row = $("<tr>").appendTo("#dataTable");
 			$("<td>").text(item.id).appendTo(table_row);
